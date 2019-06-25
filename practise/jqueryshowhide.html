@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<div>133</div>
+<div class="show" style="display: none" >234</div>
+<input type="button" class="showChoo">
+
+<script>
+    $(document).ready(function(){
+$(".showChoo").click(function(){
+    if($(".show").css("display")=="none")
+$(".show").show();
+else $(".show").hide();})
+
+
+    });
+
+
+</script>
+</body>
+</html>
