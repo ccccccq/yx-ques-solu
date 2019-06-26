@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tooltip</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left:105% ;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style>
+<body style="text-align:center;">
+<div class="tooltip"><p>鼠标移动到我这</p>
+    <span class="tooltiptext">dsa ds ja </span>
+</div>
+<input type=button value="点击我" style="display:block">
+<script>
+    $(document).ready(function(){
+        var x=$(".tooltip").offset();
+        $("input").on("click",function(){
+            $(".tooltip").text(x.left);
+        })
+    })
+</script>
+</body>
+</html>

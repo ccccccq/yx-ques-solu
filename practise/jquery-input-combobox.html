@@ -6,35 +6,22 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
+
     <script>
         $(function() {
-            $( document ).tooltip();
+            $("#age").tooltip(
+                { position:'bottom'}
+            );
         });
     </script>
-    <style>
-        label {
-            display: inline-block;
-            width: 5em;
-        }
-    </style>
-</head>
-<body>
 
-<p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
-    the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
-<p>But as it's not a native tooltip, it can be styled. Any themes built with
-    <a href="http://jqueryui.com/themeroller/" title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a>
-    will also style tooltips accordingly.</p>
-<p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
-<p><label for="age">Your age:</label><input id="age" title="We ask for your age only for statistical purposes."></p>
-<p>Hover the field to see the tooltip.</p>
 
+
+
+
+
+
+<input id="age" title="We ask for your age only for statistical purposes.">
 
 </body>
 </html>
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--作者：量变决定质变-->
-<!--来源：CSDN-->
-<!--原文：https://blog.csdn.net/nangeali/article/details/81213585-->
-<!--版权声明：本文为博主原创文章，转载请附上博文链接！-->
