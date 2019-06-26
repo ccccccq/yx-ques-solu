@@ -1,0 +1,2 @@
+问题：idea意外关闭后，重启项目，报错：端口1099被占用
+解决办法：cmd-netstat -aon|findstr "1099"-tskill 1896
